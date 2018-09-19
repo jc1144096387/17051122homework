@@ -5,6 +5,21 @@
 body{
     background-color: #f4f4f4;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav a,aside a{
+    color: #ffffff;
+}
+.article a{
+    color: #000000;
+}
+a:hover{
+    color: #337ab7;
+}
 nav{
     width: 100%;
     height: 30px;
@@ -57,6 +72,7 @@ nav ul li{
     float: left;
     width: 10%;
     text-align: center;
+    font-size: 1em;
 }
 .padding{
     height: 50px;
@@ -67,7 +83,7 @@ nav ul li{
 }
 .container .main{
     float: left;
-    width: 60%;
+    width: 65%;
 }
 .article{
     border: 1px solid #e3e3e3;
@@ -75,14 +91,54 @@ nav ul li{
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
     background-color: #ffffff;
     height: 196px;
-    margin: 30px auto;
+    margin: 20px auto 50px auto;
 }
 .article-body{
     height: 164px;
+    padding: 15px;
 }
+.article-body h2{
+    margin: 12px 0px 10px 0px;
+}
+
+
 .article-footer{
+    background-color: #1f1f1f;
+    color: white;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
     height: 30px;
+    padding: 0px 15px;
 }
 aside{
     float: right;
+    width: 30%;
+}
+.side{
+    margin: 0px auto;
+}
+.side-body{
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    background-color: #1f1f1f;
+    color: white;
+    width: 90%;
+    /* height: 392px; */
+    margin: 20px 0px 40px 0px;
+}
+.side-body p{
+    padding: 15px;
+}    
+.side-list li{
+    border: 1px solid #292929;
+    background-color: #1f1f1f;
+    padding: 10px 15px;
+    margin: 1px 0px -1px 0px;
+}
+.fixed-side-menu{
+
+    position: fixed;
+    right: 10px;
+    top: 300px;
 }
