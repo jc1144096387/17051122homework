@@ -12,13 +12,19 @@
     <!-- 顶部导航栏 -->
     <nav>
         <div class="box">
-            <div class="info" href="index.html">金成的个人博客</div>
+            <div class="info"><a href="index.html">金成的个人博客</a></div>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="browser.html">前端开发</a></li>
-                <li><a href="server.html">后台开发</a></li>
-                <li><a href="other.html">其他技术</a></li>
-                <li><a href="info.html">关于我</a></li>
+                <li class="nav-li"><a href="index.html">首页</a></li>
+                <li class="nav-li dropdown">
+                    <a>技术文章</a>
+                    <ul class="dropdown-content">
+                        <li><a href="page/browser.html" target="_blank">前端开发</a></li>
+                        <li><a href="page/server.html" target="_blank">后台开发</a></li>
+                        <li><a href="page/other.html" target="_blank">其他技术</a></li>
+                    </ul>
+                </li>
+                <li class="nav-li"><a href="page/info.html" target="_blank">关于我</a></li>
+                <li class="nav-li">时间</li>
             </ul>
             <form>
                 <div class="search">
@@ -34,7 +40,7 @@
             <h4>文章推荐</h4>
             <div class="article">
                 <div class="article-body">
-                    <h2><a href="1.html">1</a></h2>
+                    <h2><a href="page/1.html" target="_blank">1</a></h2>
                     <p>1</p>
                 </div>
                 <div class="article-footer">发布时间</div>
@@ -133,5 +139,6 @@
             <li><a><img src="image/fixed-side-menu4.png"></a></li>
         </ul>
     </div>
+    <script type="text/javascript" src="js/canvas-nest.js"></script>
 </body>
 </html>
