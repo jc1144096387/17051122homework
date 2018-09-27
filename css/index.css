@@ -7,6 +7,7 @@ body{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 ul{
     list-style: none;
@@ -30,10 +31,10 @@ nav{
     position: fixed;
 }
 .box{
-    width: 90%;
+    width: 80%;
     height: 50px;
     margin: 0px auto;
-    
+    z-index: 2;
 }
 nav .box .info{
     float: left;
@@ -43,6 +44,7 @@ nav .box .info{
 }
 nav ul{
     list-style: none;
+    z-index: 2;
 }
 .nav-li{
     float: left;
@@ -50,24 +52,28 @@ nav ul{
     text-align: center;
     font-size: 1em;
     padding: 15px 0px;
+    z-index: 2;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 2;
 }
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 46px;
+    top: 51px;
     left: 0px;
     color: #ffffff;
     background-color: rgba(102,204,204,.8);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 2;
 }
 .dropdown:hover .dropdown-content {
     display: block;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    z-index: 2;
 }
 .dropdown-content li{
     width: 120px;
@@ -75,6 +81,7 @@ nav ul{
     font-size: 1em;
     padding: 10px 0px;
     border-bottom: 1px solid #e3e3e3;
+    z-index: 2;
 }
 
 nav .box form{
@@ -109,7 +116,7 @@ nav .box button{
     height: 50px;
 }
 .container{
-    width: 90%;
+    width: 80%;
     margin: 20px auto 20px auto;
 }
 .container .main{

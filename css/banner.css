@@ -1,0 +1,60 @@
+.banner{
+    width: 600px;
+    height: 300px;
+    margin: 30px 0px;
+    z-index: -2;
+}
+.bannerContent{
+    position: relative;
+    float: left;
+    width: 480px;
+    height: 300px;
+    overflow: hidden;
+    z-index: -2;
+}
+.bannerContent li{
+    position: absolute;
+    z-index: -2;
+    opacity: 1;
+
+}
+.bannerContent img{
+    width: 480px;
+    height: 300px;
+}
+.switch-btn-box{
+    position: relative;
+    width: 110px;
+    float: right;
+    padding-right: 4px;
+    z-index: 1;
+}
+.hover-bg{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 120px;
+    height: 4pc;
+    z-index: 3;
+    background: url(../image/hover.png) no-repeat;
+}
+.switchBtn{
+    position: relative;
+    width: 120px;
+    overflow: hidden;
+}
+
+.switchBtn li{
+    height: 50px;
+    padding: 5px;
+    overflow: hidden;
+}
+.switchBtn img{
+    width: 100px;
+    height: 50px;
+    display: block;
+    border: none;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}

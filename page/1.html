@@ -48,7 +48,10 @@
 
 https://jc1144096387.github.io/canvas_nest/
 
-第一次看到这个特效时顿时惊为天人，默默地玩了几分钟= =，可惜那个网站只有压缩后的代码，搜连线背景特效只能搜到类似的，交互效果并不好，于是我便花了n个小时进行了代码重构，并添加了注释。就在刚刚，在我工作即将完成的时候，我在一篇蜘蛛网特效的文章中看到了代码= =。。。。不过似乎注释不是很多，效果也略有不同。所以看一下我的代码也是不错的选择= =。。。
+第一次看到这个特效时顿时惊为天人，默默地玩了几分钟= =，可惜那个网站只有压缩后的代码，搜连线背景特效只能搜到类
+似的，交互效果并不好，于是我便花了n个小时进行了代码重构，并添加了注释。就在刚刚，在我工作即将完成的时候，我在
+一篇蜘蛛网特效的文章中看到了代码= =。。。。不过似乎注释不是很多，效果也略有不同。所以看一下我的代码也是不错的
+选择= =。。。
 
 
 html文件，用来测试
@@ -93,7 +96,8 @@ background-color: #f4f4f4;
 
 <body>
 
-<!-- <canvas id="c_n9" width="1366" height="403" style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 0.5;"></canvas> -->
+<!-- <canvas id="c_n9" width="1366" height="403" style="position: fixed; top: 0px; left: 0px; 
+    z-index: -1; opacity: 0.5;"></canvas> -->
 
 <script type="text/javascript" src="test-clear.js" opacity= 0.6></script>
 
@@ -111,7 +115,8 @@ js文件
 
 //立即执行函数
 
-//!的作用是告诉javascript引擎这是一个函数表达式，不是函数声明，()、！、+、-等运算符都能实现这个作用，不过()是最安全的
+//!的作用是告诉javascript引擎这是一个函数表达式，不是函数声明，()、！、+、-等运算符都能实现这个作用，不过()
+是最安全的
 
 //在!function(){}后面加上()会立即调用这个函数
 
@@ -157,13 +162,16 @@ window.onresize = getWindowWH;
 
 //该函数会得到引用了本文件的script元素，
 
-//因为本文件中在赋值时执行了一次getScript函数，html文件引用本文件时，本文件之后的script标签还没有被浏览器解释，
+//因为本文件中在赋值时执行了一次getScript函数，html文件引用本文件时，本文件之后的script标签还没有被浏览器解
+释，
 
 //所以得到的script数组中，引用了本文的script元素在该数组的末尾
 
-//该函数的用意为使开发者能直接修改在html中引入该文件的script元素的属性来修改画布的一些属性，画布的z-index，透明度和小方块数量，颜色
+//该函数的用意为使开发者能直接修改在html中引入该文件的script元素的属性来修改画布的一些属性，画布的z-index，
+透明度和小方块数量，颜色
 
-//与前面往body元素添加canvas元素的代码配合，当开发者想要使用该特效作为背景时，只需在html文件中添加script元素并引用本文件即可
+//与前面往body元素添加canvas元素的代码配合，当开发者想要使用该特效作为背景时，只需在html文件中添加script元
+素并引用本文件即可
 
 function getAttr() {
 
@@ -193,9 +201,11 @@ count: script.getAttribute("count") || 99
 
 function getWindowWH() {
 
-W = canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+W = canvas.width = window.innerWidth || document.documentElement.clientWidth || 
+document.body.clientWidth,
 
-H = canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+H = canvas.height = window.innerHeight || document.documentElement.clientHeight || 
+document.body.clientHeight
 
 }
 
@@ -287,7 +297,9 @@ mouse.y = null;
 
 //绘制小方块，小方块移动(碰到边界反向移动)，小方块受鼠标束缚
 
-var animation = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (i) {
+var animation = window.requestAnimationFrame || window.webkitRequestAnimationFrame || 
+window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame |
+| function (i) {
 
 window.setTimeout(i, 1000 / 45)
 
