@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>反馈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/feedback.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html"><img src="../image/back.gif" width="42px" height="42px"></a>
+        <h1>建议/反馈</h1>
+        <hr>
+        <form>
+            <div>
+                <span>反馈类型</span>
+                <label for="advice">功能建议</label><input type="radio" name="type" value="advice" id="advice">
+                <label for="feedback">bug反馈</label><input type="radio" name="type" value="feedback" id="feedback">
+            </div>
+            <div>
+                <span for="caption">标题</span>
+                <input type="text" placeholder="请输入标题" id="caption">
+            </div>
+            <div>
+                <span for="content">内容</span>
+                <!-- <textarea>和</textarea>之间不能有空格，不然会影响光标位置并且placeholder失效 -->
+                <textarea id="content" placeholder="请输入提交内容..."></textarea>
+            </div>
+            <button>提交</button>
+        </form>
+    </div>
+</body>
+</html>

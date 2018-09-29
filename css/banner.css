@@ -26,7 +26,7 @@
     position: relative;
     width: 110px;
     float: right;
-    padding-right: 4px;
+    /* padding-right: 4px; */
     z-index: 1;
 }
 .hover-bg{
@@ -54,7 +54,7 @@
     height: 50px;
     display: block;
     border: none;
-    vertical-align: top;
+    /* vertical-align: top; */
     margin: 0;
     padding: 0;
 }
