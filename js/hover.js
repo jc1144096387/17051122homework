@@ -4,6 +4,7 @@
 
 var bannerLeft = document.getElementsByClassName("bannerLeft");
 var bannerRight = document.getElementsByClassName("bannerRight");
+var hoverBg = document.getElementsByClassName("hover-bg");
 
 function mouseOver(i){
     // (function(i){
@@ -25,58 +26,13 @@ function hover(){
     bannerRight[2].addEventListener("mouseover",function(){mouseOver(2);clearInterval(auto_timer);});
     bannerRight[3].addEventListener("mouseover",function(){mouseOver(3);clearInterval(auto_timer);});
     bannerRight[4].addEventListener("mouseover",function(){mouseOver(4);clearInterval(auto_timer);});
-    document.getElementsByClassName("hover-bg")[0].addEventListener("mouseover",function(){clearInterval(auto_timer);});
+    hoverBg[0].addEventListener("mouseover",function(){clearInterval(auto_timer);});
     bannerRight[0].addEventListener("mouseout",function(){flag = 1;auto();});
     bannerRight[1].addEventListener("mouseout",function(){flag = 2;auto();});
     bannerRight[2].addEventListener("mouseout",function(){flag = 3;auto();});
     bannerRight[3].addEventListener("mouseout",function(){flag = 4;auto();});
     bannerRight[4].addEventListener("mouseout",function(){flag = 0;auto();});
-    document.getElementsByClassName("hover-bg")[0].addEventListener("mouseout",function(){flag = switch_target/60 + 1;if(flag == 5)flag=0;auto();});
-
-    //用以下代码绑定会直接触发一次函数
-        // bannerRight[0].onmouseover = mouseOver(0);
-        // bannerRight[1].onmouseover = mouseOver(1);
-        // bannerRight[2].onmouseover = mouseOver(2);
-        // bannerRight[3].onmouseover = mouseOver(3);
-        // bannerRight[4].onmouseover = mouseOver(4);
-
-
-    // bannerRight[0].onmouseover = function(){
-    //     loseHover(1);
-    //     loseHover(2);
-    //     loseHover(3);
-    //     loseHover(4);
-    //     getHover(0);
-    // }
-    // bannerRight[1].onmouseover = function(){
-    //     loseHover(0);
-    //     loseHover(2);
-    //     loseHover(3);
-    //     loseHover(4);
-    //     getHover(1);
-    // }
-    // bannerRight[2].onmouseover = function(){
-    //     loseHover(1);
-    //     loseHover(0);
-    //     loseHover(3);
-    //     loseHover(4);
-    //     getHover(2);
-    // }
-    // bannerRight[3].onmouseover = function(){
-    //     loseHover(1);
-    //     loseHover(2);
-    //     loseHover(0);
-    //     loseHover(4);
-    //     getHover(3);
-    // }
-    // bannerRight[4].onmouseover = function(){
-    //     loseHover(1);
-    //     loseHover(2);
-    //     loseHover(3);
-    //     loseHover(0);
-    //     getHover(4);
-    // }
-    
+    hoverBg[0].addEventListener("mouseout",function(){flag = switch_target/60 + 1;if(flag == 5)flag=0;auto();});
 }
 function getHover(i){
     bannerLeft[i].style.zIndex = "1";

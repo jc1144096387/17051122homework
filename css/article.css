@@ -1,17 +1,4 @@
-*{
-    margin: 0px;
-    padding: 0px; 
-}
-body{
-    background-color: #f4f4f4;
-}
-a{
-    text-decoration: none;
-    cursor: pointer;
-}
-ul{
-    list-style: none;
-}
+
 nav a,aside a{
     color: #ffffff;
 }
@@ -20,94 +7,6 @@ nav a,aside a{
 }
 a:hover{
     color: #337ab7;
-}
-
-nav{
-    width: 100%;
-    height: 50px;
-    color: #ffffff;
-    background-color: #6cc;
-    /* padding: 10px 0px; */
-    position: fixed;
-}
-.box{
-    width: 90%;
-    height: 50px;
-    margin: 0px auto;
-    
-}
-nav .box .info{
-    float: left;
-    font-size: 1.5em; 
-    font-family:"Times New Roman", Times, serif;
-    padding: 10px 0px;
-}
-nav ul{
-    list-style: none;
-}
-.nav-li{
-    float: left;
-    width: 120px;
-    text-align: center;
-    font-size: 1em;
-    padding: 15px 0px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 46px;
-    left: 0px;
-    color: #ffffff;
-    background-color: #6cc;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.dropdown-content li{
-    width: 120px;
-    text-align: center;
-    font-size: 1em;
-    padding: 10px 0px;
-    border-bottom: 1px solid #e3e3e3;
-}
-
-nav .box form{
-    float: right;
-    margin: 10px 36px 0px 0px;
-}
-nav .box .search{
-    float: left;
-    border: none;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    background-color: #ffffff;
-    height: 30px;
-    margin-right: 10px;
-}
-nav .box .search input{
-    border: none;
-    outline: none;
-    line-height: 30px;
-}
-nav .box button{
-    float: left;
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    background-color: #ffffff;
-    width: 50px;
-    height: 30px;
-}
-.padding{
-    height: 50px;
 }
 .container{
     width: 90%;
@@ -142,35 +41,4 @@ xmp{
     border-bottom-left-radius: 4px;
     height: 24px;
     padding: 3px 15px;
-}
-aside{
-    float: right;
-    width: 30%;
-}
-.side{
-    margin: 0px auto;
-}
-.side-body{
-    border: 1px solid #e3e3e3;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    background-color: #1f1f1f;
-    color: white;
-    width: 90%;
-    /* height: 392px; */
-    margin: 20px 0px 40px 0px;
-}
-.side-body p{
-    padding: 15px;
-}    
-.side-list li{
-    border: 1px solid #292929;
-    background-color: #1f1f1f;
-    padding: 10px 15px;
-    margin: 1px 0px -1px 0px;
-}
-.fixed-side-menu{
-    position: fixed;
-    right: 10px;
-    top: 300px;
 }

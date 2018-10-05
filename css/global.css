@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+}
+body{
+    background-color: #f4f4f4;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
