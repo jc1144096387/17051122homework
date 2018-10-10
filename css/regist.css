@@ -1,0 +1,87 @@
+a{
+    text-decoration: none;
+    color: #787d82;
+}
+a:hover{
+    color: #337ab7;
+}
+.container{
+    text-align: center;
+    width: 320px;
+    margin: 100px auto;
+}
+.-head{
+    height: 32px;
+    margin: 50px auto 30px auto;
+}
+.regist-head .feedback{
+    float: left;
+}
+.regist-head h1{
+    float: left;
+    font-weight: 400;
+    font-size: 24px;
+    color: #14191e;
+    margin: 3px 0px 0px 10px;
+}
+.regist-head .login{
+    float: right;
+    margin-top: 13px;
+    color: rgba(102,204,204,.8);
+    font-size: 14px;
+}
+.regist-head span{
+    float: right;
+    margin-top: 13px;
+    color: #787d82;
+    font-size: 14px;
+}
+.regist-body .input{
+    width: 290px;
+    margin-bottom: 15px;
+    padding: 12px 14px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px 0 #fff;
+    border: 1px solid rgba(84,92,99,.6);
+    border-radius: 6px;
+    color: #1c1f21;
+    line-height: 20px;
+    outline: 0;
+}
+.regist-body div label, .regist-body div input{
+    float: left;
+    font-size: 0.8em;
+}
+.regist-body div input{
+    margin: 4px 10px 0px 0px;
+}
+.regist-body div a{
+    float: right;
+}
+.submit{
+    clear: both;
+    width: 320px;
+    background-color: rgba(102,204,204,.8);
+    border: 1px solid rgba(102,204,204,.8);
+    margin-top: 20px;
+    padding: 11px 32px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 24px;
+    color: #fff;
+}
+.regist-footer{
+    margin-top: 20px;
+}
+.regist-footer span{
+    float: left;
+    font-size: 0.8em;
+
+}
+.regist-footer img{
+    margin-top: -10px;
+}
+.footer{
+    text-align: center;
+    margin: 300px auto 0px auto;
+}
