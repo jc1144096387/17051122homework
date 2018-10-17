@@ -1,0 +1,27 @@
+.container{
+    width: 80%;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    background-color:  #fdfdfd;;
+    margin: 70px auto 20px auto;
+    padding: 20px;
+}
+.container li{
+    height: 26px;
+    padding: 12px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.container li span{
+    display: inline-block;
+    width: 150px;
+    font-size: 20px;
+    color: rgba(102,204,204,.8);
+}
+.container li a{
+    color: black;
+}
+.container li a:hover{
+    color: #337ab7;
+}

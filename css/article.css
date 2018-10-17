@@ -1,7 +1,4 @@
 
-nav a,aside a{
-    color: #ffffff;
-}
 .article a{
     color: #000000;
 }
@@ -10,7 +7,7 @@ a:hover{
 }
 .container{
     width: 90%;
-    margin: 20px auto 20px auto;
+    margin: 70px auto 20px auto;
 }
 .container .main{
     float: left;

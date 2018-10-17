@@ -114,6 +114,6 @@ function auto(){
 }
 
 
-
+scroll();
 hover();
 auto();

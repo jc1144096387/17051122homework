@@ -1,6 +1,13 @@
+aside a{
+    color: #ffffff;
+}
+a:hover{
+    color: #337ab7;
+}
 aside{
     float: right;
     width: 30%;
+    margin-top: 30px;
 }
 .side{
     margin: 0px auto;
@@ -23,9 +30,4 @@ aside{
     background-color: #1f1f1f;
     padding: 10px 15px;
     margin: 1px 0px -1px 0px;
-}
-.fixed-side-menu{
-    position: fixed;
-    right: 10px;
-    top: 300px;
 }
