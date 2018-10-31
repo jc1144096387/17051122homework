@@ -1,8 +1,20 @@
+/* 覆盖背景和顶部导航栏样式 */
+a:hover{
+    color: hsla(0, 100%, 60%,1);
+}
+header{
+    background-color: hsla(0, 100%, 60%,0.5);
+}
+.dropdown-content {
+    background-color: hsla(0, 100%, 60%,0.5);
+}
+
+/* aboutme */
 .container{
-    width: 80%;
+    width: 70%;
     background-color: #ffffff;
     border: 1px solid #e3e3e3;
-    border-radius: 4px;
+    border-radius: 10px;
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
     background-color:  #fdfdfd;;
     margin: 70px auto 20px auto;
@@ -17,11 +29,11 @@
     display: inline-block;
     width: 150px;
     font-size: 20px;
-    color: rgba(102,204,204,.8);
+    color: hsla(0, 100%, 60%,0.5);
 }
 .container li a{
     color: black;
 }
 .container li a:hover{
-    color: #337ab7;
+    color: hsla(0, 100%, 60%,0.5);
 }
