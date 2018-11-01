@@ -1,12 +1,12 @@
 /* 覆盖背景和顶部导航栏样式 */
 a:hover{
-    color: hsla(0, 100%, 60%,1);
+    color: rgb(255, 50, 50);
 }
 header{
-    background-color: hsla(0, 100%, 60%,0.5);
+    background-color: rgba(255, 50, 50, 0.5);
 }
 .dropdown-content {
-    background-color: hsla(0, 100%, 60%,0.5);
+    background-color: rgba(255, 50, 50, 0.5);
 }
 
 /* aboutme */
@@ -29,11 +29,11 @@ header{
     display: inline-block;
     width: 150px;
     font-size: 20px;
-    color: hsla(0, 100%, 60%,0.5);
+    color: rgba(255, 50, 50, 0.5);
 }
 .container li a{
     color: black;
 }
 .container li a:hover{
-    color: hsla(0, 100%, 60%,0.5);
+    color: rgba(255, 50, 50, 0.5);
 }

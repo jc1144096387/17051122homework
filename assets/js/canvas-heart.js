@@ -31,7 +31,7 @@
         }
         context.strokeStyle = "red";
         context.shadowBlur = 25;
-        context.shadowColor = "hsla(0, 100%, 60%,0.5)";
+        context.shadowColor = "rgba(255, 50, 50, 0.5)";
         
         var precision = 100;//密度
         var hearts = [];
