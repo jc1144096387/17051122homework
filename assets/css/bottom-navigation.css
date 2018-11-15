@@ -1,0 +1,26 @@
+.bottom-navigation{
+    margin-bottom: 50px;
+    margin-left: 5px;
+}
+.bottom-navigation div{
+    margin-left: -6px;
+
+    display: inline-block;
+    border: 1px solid #ddd;
+    background-color: black;
+    color: white; 
+}
+.bottom-navigation div a{
+    display: inline-block;
+    padding: 6px 12px;
+    color: white; 
+}
+.bottom-navigation div:first-child{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.bottom-navigation div:last-child{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
