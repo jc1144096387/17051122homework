@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/side.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/fixedSide.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/comment.css" />
 </head>
 <body>
     <!-- 顶部导航栏 -->
@@ -259,6 +260,28 @@
     <p>min是压缩文件</p>
             </div>
         </div>
+
+    <!-- 评论模块 -->
+    <div class="commentContainer">
+        <div class="comment">
+            <h4>发表评论</h4>
+            <form>
+                <input id="commentName" class="inputForm" type="text" placeholder="昵称"><br>
+                <textarea id="commentText" class="inputForm" placeholder="发表你的看法"></textarea><br>
+                <input id="commentBtn" class="commentBtn" value="提交" readonly> 
+            </form>
+        </div>
+        <div id="commentBody" class="commentBody">
+            <div class="commentItem">
+                <span>昵称: </span><span>发表于2018年11月21日18:12</span>
+                <div class="commentItemBody">
+                    testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="fixed-side-menu">
         <ul>
             <li><a href="javascript:scrollTo(0,0);"><img src="../assets/image/fixed-side-menu1.png"></a></li>
@@ -267,6 +290,9 @@
             <li><a><img src="../assets/image/fixed-side-menu4.png"></a></li>
         </ul>
     </div>
+
+
+    <script type="text/javascript" src="../assets/js/comment.js"></script>
     <script type="text/javascript" src="../assets/js/canvas-nest.js"></script>
 </body>
 </html>
