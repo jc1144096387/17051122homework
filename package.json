@@ -1,0 +1,17 @@
+{
+  "name": "www",
+  "version": "1.0.0",
+  "description": "- 完成了初步的首页布局规划\r     + 顶部导航栏\r     + 文章推荐区\r     + 侧边栏（最近热门、最新评论、友情链接）\r - 对顶部导航栏和文章推荐区进行了初步的制作",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

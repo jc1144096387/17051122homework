@@ -1,0 +1,1 @@
+$("body").floatBanner("assets/image/fixed-side-menu4.png",200,200,2,30,"aboutme.html");
