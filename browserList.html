@@ -3,15 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>金成的个人博客</title>
+    <title>前端开发</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/global.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/header.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/banner.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/side.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fixedSide.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/foldable-side.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bottom-navigation.css" />
     <script src="assets/js/jquery-1.9.1.min.js"></script>
     <!-- 引入include函数文件 -->
     <script src="assets/js/jqueryIncludeFn.js"></script>
@@ -52,33 +51,10 @@
     </header>
     <div class="container">
         <div class="main">
-            <!-- 图片广告 -->
-            <div class="banner">
-                <div class="bannerContent">
-                    <ul>
-                        <li class="bannerLeft" style="z-index: 1;"><a><img src="assets/image/banner0.jpg"></a></li>
-                        <li class="bannerLeft"><a><img src="assets/image/banner1.jpg"></a></li>
-                        <li class="bannerLeft"><a><img src="assets/image/banner2.jpg"></a></li>
-                        <li class="bannerLeft"><a><img src="assets/image/banner3.jpg"></a></li>
-                        <li class="bannerLeft"><a><img src="assets/image/banner4.jpg"></a></li>
-                    </ul>
-                </div>
-                <div class="switch-btn-box">
-                    <div class="hover-bg" style="margin-top:0px;"></div>
-                    <ul class="switchBtn">
-                        <li class="bannerRight"><a><img src="assets/image/banner0.jpg"></a></li>
-                        <li class="bannerRight"><a><img src="assets/image/banner1.jpg"></a></li>
-                        <li class="bannerRight"><a><img src="assets/image/banner2.jpg"></a></li>
-                        <li class="bannerRight"><a><img src="assets/image/banner3.jpg"></a></li>
-                        <li class="bannerRight"><a><img src="assets/image/banner4.jpg"></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--    文章推荐区 -->
-            <h4>文章推荐</h4>
+            <h4>前端开发</h4>
             <div class="article" id="article1">
                 <!-- <div class="article-body">
-                    <h2><a href="posts/1.html" target="_blank">canvas实现蜘蛛网动态背景特效</a></h2>
+                    <h2><a href="../posts/1.html" target="_blank">canvas实现蜘蛛网动态背景特效</a></h2>
                     <p>
                         先上效果再说废话（滑稽）https://jc1144096387.github.io/canvas_nest/第一次看到这个特效时顿时惊为天人，默默地玩了几分钟= =，可惜那个网站只有压缩后的代码，搜连线背景特效只能搜到类似的，交互效果并不好，于是我便花了n个小时进行了代码重构，并添加了注释。就在刚刚，在我工作即将完成的时候，我在一篇蜘蛛网特效的文章中看到了代码= =...不过似乎注释不是很多，效果也略有不同。所以看一下我的代码也是不错的选择= =...    
                     </p>
@@ -87,7 +63,7 @@
             </div>
             <div class="article" id="article2">
                 <!-- <div class="article-body">
-                    <h2><a href="posts/2.html" target="_blank">学习笔记-《全栈开发之道》MEAN学习笔记-简单的商品管理功能</a></h2>
+                    <h2><a href="../posts/2.html" target="_blank">学习笔记-《全栈开发之道》MEAN学习笔记-简单的商品管理功能</a></h2>
                     <p>本文介绍了利用MEAN技术栈(MongoDB,Express,Angular,Node.js)构建一个简单的商品管理功能.所需环境：Node.js、MongoDB  、（git）.先创建一个基于EJS的Express工程...</p>
                 </div>
                 <div class="article-footer">发布时间:2018年09月21日 19:35:37</div> -->
@@ -112,6 +88,15 @@
                     <p>5</p>
                 </div>
                 <div class="article-footer">发布时间</div> -->
+            </div>
+
+            <!-- 分页导航栏 -->
+            <div class="bottom-navigation">
+                <div><a id="lastPage" href="browserList.html#id=1">上一页</a></div>
+                <div><a href="browserList.html#id=1">1</a></div>
+                <div><a href="browserList.html#id=2">2</a></div>
+                <div><a href="browserList.html#id=3">3</a></div>
+                <div><a id="nextPage">下一页</a></div>
             </div>
         </div>
         <!-- 侧边栏 -->
@@ -163,51 +148,67 @@
     <!-- 固定的侧边菜单 -->
     <div class="fixed-side-menu">
         <ul>
-            <li><a href="javascript:scrollTo(0,0);"><img src="assets/image/fixed-side-menu1.png"></a></li>
-            <li><a href="feedback.html"><img src="assets/image/fixed-side-menu2.png"></a></li>
-            <li><a><img src="assets/image/fixed-side-menu3.png"></a></li>
-            <li><a><img src="assets/image/fixed-side-menu4.png"></a></li>
+            <li><a href="javascript:scrollTo(0,0);"><img src="../assets/image/fixed-side-menu1.png"></a></li>
+            <li><a href="../feedback.html"><img src="../assets/image/fixed-side-menu2.png"></a></li>
+            <li><a><img src="../assets/image/fixed-side-menu3.png"></a></li>
+            <li><a><img src="../assets/image/fixed-side-menu4.png"></a></li>
         </ul>
     </div>
-    <!-- 折叠侧边栏 -->
-    <div class="foldable-side-container">
-        <div class="foldable-side-btn"></div>
-        <div class="foldable-side-weather">
-            <image class="weather-img"></image>
-            <div class="weather">
-                <div class="city"></div>
-                <span class="weather-txt"></span>
-                <span class="weather-tmp"></span>
-            </div>
-        </div>
-        <div class="foldable-side-calendar">calendar</div>
-    </div>
-    <!-- 图片广告特效 -->
-    <script src="assets/js/hover.js"></script>
-    <!-- jquery折叠侧边栏 -->
-    <script src="assets/js/jquery-foldable-side.js"></script>
+
     <!-- 蜘蛛网动态背景特效 -->
-    <script type="text/javascript" src="assets/js/canvas-nest.js" zIndex="-10"></script>
-    <!-- jquery悬浮广告 -->
-    <script src="assets/js/jquery-floatBanner.js"></script>
-    <script src="assets/js/testJqueryPlugins.js"></script>
+    <script type="text/javascript" src="../assets/js/canvas-nest.js" zIndex="-10"></script>
     <!-- 引入文件 -->
     <script>
-        $.get("./mock/indexArticleInfos.json",function(result){
-            let indexArticleInfos = result;
-            $.get("./tpl/articleInfo.tpl", function(result){   
-                for(let i=0; i < indexArticleInfos.length; i ++){
-                    let targetResult = result;
-                    console.log(indexArticleInfos[i].title);
-                    targetResult = targetResult.replace("~title",indexArticleInfos[i].title);
-                    targetResult = targetResult.replace("~content",indexArticleInfos[i].content);
-                    targetResult = targetResult.replace("~time",indexArticleInfos[i].time);
-                    targetResult = targetResult.replace("~url",indexArticleInfos[i].url);
-                    $("#article"+(i+1)).html(targetResult);
-                }  
-            });
-        })
+        // var id = window.location.hash.substring(4,window.location.hash.length);
         
+        
+
+        console.log(window.location.hash.substring(1,window.location.hash.length));
+        function hashChangeFire(){
+            var id = window.location.hash.substring(4,window.location.hash.length);
+            if(id==''){
+                id =1;
+            }
+            if(id>1)
+                $("#lastPage").attr("href","browserList.html#id="+parseInt(id-1)); 
+            if(id<3)
+                $("#nextPage").attr("href","browserList.html#id="+(parseInt(id)+1)); 
+            $.get("./mock/browserArticleInfos"+id+".json",function(result){
+                let browserArticleInfos = result;
+                $.get("./tpl/articleInfo.tpl", function(result){   
+                    for(let i=0; i < 5; i ++){
+                        let targetResult = result;
+                        // console.log(browserArticleInfos[i].title);
+                        if(browserArticleInfos[i]){
+                            
+                            targetResult = targetResult.replace("~title",browserArticleInfos[i].title);
+                            targetResult = targetResult.replace("~content",browserArticleInfos[i].content);
+                            targetResult = targetResult.replace("~time",browserArticleInfos[i].time);
+                            targetResult = targetResult.replace("~url",browserArticleInfos[i].url);
+                            $("#article"+(i+1)).html(targetResult);
+                        }else{
+                            $("#article"+(i+1)).html(' ');
+                        }
+                    }  
+                });
+            })
+        }
+        
+        hashChangeFire();
+
+        if( ('onhashchange' in window) && ((typeof document.documentMode==='undefined') || document.documentMode==8)) {
+            // 浏览器支持onhashchange事件
+            window.onhashchange = hashChangeFire;  // TODO，对应新的hash执行的操作函数
+        } else {
+            // 不支持则用定时器检测的办法
+            setInterval(function() {
+                var ischanged = isHashChanged();  // TODO，检测hash值或其中某一段是否更改的函数
+                if(ischanged) {
+                    hashChangeFire();  // TODO，对应新的hash执行的操作函数
+                }
+            }, 150);
+        }
+
     </script>
 </body>
 </html>

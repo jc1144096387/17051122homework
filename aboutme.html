@@ -9,39 +9,43 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/header.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/aboutme.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/fixedSide.css" />
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <!-- 引入include函数文件 -->
+    <script src="assets/js/jqueryIncludeFn.js"></script>
+    <script>include("header");</script>
 </head>
 <body>
     <!-- 网页头部 -->
-    <header>
-        <div class="box">
-            <!-- 网站信息 -->
+    <header id="header">
+        <!-- <div class="box">
+
             <div class="info"><a href="index.html">金成的个人博客</a></div>
-            <!-- 网站导航栏 -->
+
             <ul>
                 <li class="nav-li"><a href="index.html">首页</a></li>
                 <li class="nav-li dropdown">
                     <a>技术文章</a>
                     <ul class="dropdown-content">
-                        <li><a href="browserList/browserList1.html">前端开发</a></li>
-                        <li><a href="serverList/serverList1.html">后台开发</a></li>
-                        <li><a href="otherList/otherList1.html">其他技术</a></li>
+                        <li><a href="browserList.html" target="_blank">前端开发</a></li>
+                        <li><a href="serverList/serverList1.html" target="_blank">后台开发</a></li>
+                        <li><a href="otherList/otherList1.html" target="_blank">其他技术</a></li>
                     </ul>
                 </li>
                 <li class="nav-li"><a href="aboutme.html">关于我</a></li>
             </ul>
-            <!-- 登录注册栏 -->
+
             <div>
                 <a href="regist.html" class="login">注册</a>
                 <a href="login.html" class="login">登录</a>
             </div>
-            <!-- 搜索栏 -->
+
             <form>
                 <div class="search">
                     <input type="text">
                 </div>
                 <button>搜索</button>
             </form>
-        </div>
+        </div> -->
     </header>
 
     <!-- 主体部分 -->

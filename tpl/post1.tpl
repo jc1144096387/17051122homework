@@ -1,53 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>canvas实现蜘蛛网动态背景特效</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/article.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/global.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/header.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/side.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/fixedSide.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/comment.css" />
-</head>
-<body>
-    <!-- 顶部导航栏 -->
-    <!-- 网页头部 -->
-    <header>
-        <div class="box">
-
-            <div class="info"><a href="index.html">金成的个人博客</a></div>
-        
-            <ul>
-                <li class="nav-li"><a href="index.html">首页</a></li>
-                <li class="nav-li dropdown">
-                    <a>技术文章</a>
-                    <ul class="dropdown-content">
-                        <li><a href="browserList.html" target="_blank">前端开发</a></li>
-                        <li><a href="serverList.html" target="_blank">后台开发</a></li>
-                        <li><a href="otherList.html" target="_blank">其他技术</a></li>
-                    </ul>
-                </li>
-                <li class="nav-li"><a href="aboutme.html">关于我</a></li>
-            </ul>
-        
-            <div>
-                <a href="regist.html" class="login">注册</a>
-                <a href="login.html" class="login">登录</a>
-            </div>
-        
-            <form>
-                <div class="search">
-                    <input type="text">
-                </div>
-                <button>搜索</button>
-            </form>
-        </div>
-    </header>
-
-    <div class="container">
+<div class="container">
         <div class="main">
             <div class="mainHead">
                 <p>当前位置：博客首页>>前端开发 >> 阅读正文</p>
@@ -55,6 +6,7 @@
                 <p>作者: 金成 分类: 前端开发, canvas 发布于: 2018年09月23日 08:15:37 浏览(0) 评论(0)</p>
                 <hr>
             </div>
+            
             <div class="mainText">
 <p>先上效果再说废话（滑稽）<a href="https://jc1144096387.github.io/canvas_nest/" target="_blank">https://jc1144096387.github.io/canvas_nest/</a></p>
 <p>第一次看到这个特效时顿时惊为天人，默默地玩了几分钟= =，可惜那个网站只有压缩后的代码，搜连线背景特效只能搜到类似的，交互效果并不好，于是我便花了n个小时进行了代码重构，并添加了注释。就在刚刚，在我工作即将完成的时候，我在一篇蜘蛛网特效的文章中看到了代码= =。。。。不过似乎注释不是很多，效果也略有不同。所以看一下我的代码也是不错的选择= =。。。</p>
@@ -280,19 +232,3 @@
             </div>
         </div>
     </div>
-
-
-    <div class="fixed-side-menu">
-        <ul>
-            <li><a href="javascript:scrollTo(0,0);"><img src="../assets/image/fixed-side-menu1.png"></a></li>
-            <li><a href="../feedback.html"><img src="../assets/image/fixed-side-menu2.png"></a></li>
-            <li><a><img src="../assets/image/fixed-side-menu3.png"></a></li>
-            <li><a><img src="../assets/image/fixed-side-menu4.png"></a></li>
-        </ul>
-    </div>
-
-
-    <script type="text/javascript" src="../assets/js/comment.js"></script>
-    <script type="text/javascript" src="../assets/js/canvas-nest.js"></script>
-</body>
-</html>
