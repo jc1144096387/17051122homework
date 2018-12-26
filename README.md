@@ -70,3 +70,8 @@
 
 
 # github库的根目录要有site.json和thumb.png缩略图
+
+
+# 项目验收
+
+

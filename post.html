@@ -54,7 +54,7 @@
     
 
     <!-- 评论模块 -->
-    <!-- <div class="commentContainer">
+    <div class="commentContainer">
         <div class="comment">
             <h4>发表评论</h4>
             <form>
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <div class="fixed-side-menu">
@@ -86,53 +86,9 @@
 
 
 
-    <!-- 引入文件 -->
-    <script>
-        // var id = window.location.hash.substring(4,window.location.hash.length);
-        
-        
+    
 
-        console.log(window.location.hash.substring(1,window.location.hash.length));
-        function hashChangeFire(){
-            var id = window.location.hash.substring(4,window.location.hash.length);
-
-                $.get("./tpl/post"+id+".tpl", function(result){   
-                        // let targetResult = result;
-                        // console.log(browserArticleInfos[i].title);
-                        // if(browserArticleInfos[i]){
-                        //     targetResult = targetResult.replace("~title",browserArticleInfos[i].title);
-                        //     targetResult = targetResult.replace("~content",browserArticleInfos[i].content);
-                        //     targetResult = targetResult.replace("~time",browserArticleInfos[i].time);
-                        //     targetResult = targetResult.replace("~url",browserArticleInfos[i].url);
-                        //     $("#article"+(i+1)).html(targetResult);
-                        // }else{
-                        //     $("#article"+(i+1)).html(' ');
-                        // }
-
-                        $("body").append(result);
-                       
-                });
-            
-        }
-        
-        hashChangeFire();
-
-        if( ('onhashchange' in window) && ((typeof document.documentMode==='undefined') || document.documentMode==8)) {
-            // 浏览器支持onhashchange事件
-            window.onhashchange = hashChangeFire;  // TODO，对应新的hash执行的操作函数
-        } else {
-            // 不支持则用定时器检测的办法
-            setInterval(function() {
-                var ischanged = isHashChanged();  // TODO，检测hash值或其中某一段是否更改的函数
-                if(ischanged) {
-                    hashChangeFire();  // TODO，对应新的hash执行的操作函数
-                }
-            }, 150);
-        }
-
-    </script>
-
-    <!-- <script type="text/javascript" src="../assets/js/comment.js"></script> -->
+    <script type="text/javascript" src="../assets/js/comment.js"></script>
     <script type="text/javascript" src="../assets/js/canvas-nest.js"></script>
 </body>
 </html>
