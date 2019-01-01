@@ -18,6 +18,7 @@ function mouseOver(i){
     // })(i);
 }
 
+//这是鼠标事件交互的主函数
 function hover(){
     
     // 事件监听要用匿名函数传参数
@@ -114,6 +115,5 @@ function auto(){
 }
 
 
-scroll();
 hover();
 auto();

@@ -19,11 +19,12 @@ $.fn.floatBanner = function(imgUrl,width,height,speed,angle,targetUrl) { //定�
 
     /*  插件参数
     **  imgUrl: 设置广告框的图片
-    **  以下为可选项，若需要采用默认值的参数处于中间位置，请填0
+    **  以下为可选项，若需要采用默认值的参数处于中间位置，请填false
     **  width:  设置广告框宽度,单位为px，写参数时不要带单位,默认值200
     **  height: 设置广告框高度,单位为px，写参数时不要带单位,默认值200
-    **  speed:  设置广告框移动速度，单位px/10毫秒，写参数时不要带单位,默认值1
+    **  speed:  设置广告框移动速度，单位px/10毫秒，写参数时不要带单位,默认值2
     **  angle:  设置广告框移动角度，单位度（°），写参数时不要带单位,默认值30
+    **  targetUrl: 设置广告跳转的目标页面，默认值#即不跳转
     */
 
     /*  功能介绍
@@ -35,8 +36,8 @@ $.fn.floatBanner = function(imgUrl,width,height,speed,angle,targetUrl) { //定�
 //参数初始化
     width  = width?width:200;
     height = height?height:200;
-    speed  = speed?speed:1;
-    angle  = angle?angle*2*Math.PI/360:30*2*Math.PI/360;
+    speed  = speed==false?speed:2;
+    angle  = angle==false?angle*2*Math.PI/360:30*2*Math.PI/360;
     targetUrl = targetUrl ? targetUrl:"#";
 
 //获取可视界面的宽高
@@ -63,7 +64,7 @@ $.fn.floatBanner = function(imgUrl,width,height,speed,angle,targetUrl) { //定�
                     'z-index: 100'        + ';'   +
                     '"';
     //创建带超链接的img元素
-    var img   = '<a href="'+ targetUrl + '" target="_blank">'   +     
+    var img   = '<a href="'+ targetUrl + '">'   +     
                 '<img '    + imgstyle     +
                 'id="bannerImg"'       +
                 'src="'    + imgUrl    + '" '  +
@@ -71,7 +72,7 @@ $.fn.floatBanner = function(imgUrl,width,height,speed,angle,targetUrl) { //定�
                 "</a>";
     
     //设置关闭按钮样式
-    x=x+180;
+    x=x+width-20;
     var btnstyle =  'style="'           +
                     'width:20px;'       +
                     'height:20px;'      +
